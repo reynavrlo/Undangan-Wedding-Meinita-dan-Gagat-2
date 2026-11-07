@@ -428,6 +428,7 @@ $('combinedForm').addEventListener('submit', async e => {
 const params=new URLSearchParams(location.search);
 const guest=params.get('to');
 if(guest){$('combinedName').value=guest;setTimeout(()=>toast('Undangan untuk '+guest),600)}
+loadGuestbook();
 </script>
 </body>
 </html>
